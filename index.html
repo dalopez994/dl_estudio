@@ -11,12 +11,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body id="gridAreas">
 	<header>
-		<img src="assets/img/image.jpg" alt="logo">
+		<img class="animate__animated animate__tada" id="dlEstudio" src="assets/img/image.jpg" alt="logo">
         <h3 id="dlEstudio">DL Estudio</h3>
-		<section>
+		<section class="animate__animated animate__bounce">
 			<div>Mail</div>
 			<div>WhatsApp</div>
 			<div>Instagram</div>
@@ -54,6 +58,11 @@
 			<div>info@dlestudio.com.ar</div>
 		</section>
 	</footer>
+	<script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+
 </body>
 
 </html>

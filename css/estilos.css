@@ -370,7 +370,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	background-color: rgb(9, 9, 70);
-}
+	animation: animate__bounce 2s}
 
 header section {
 	color: white;
@@ -427,6 +427,7 @@ body {
 ul{
 
 	font-size: 20px;
+	
 
 }
 ul li{
@@ -434,6 +435,20 @@ ul li{
 	background-color: rgba(128, 128, 128, 0.747);
 	border: 1px solid white;
 	list-style-type: none;
+
+	animation-duration: 2s;
+	animation-name: aparecer;
+ }
+ 
+ 
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ 
 
 }
 
@@ -516,4 +531,7 @@ footer section{
 		grid-area: colab4;
 				background-color: rgba(128, 128, 128, 0.747);
 	}
+}
+.animate__animated.animate__bounce {
+	--animate-duration: 3s;
 }
