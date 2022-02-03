@@ -113,6 +113,9 @@
 			height: 100%;
 		}
 	
+		.carousel {
+			display: none
+		}
 	
 	/*Servicios*/
 		#servicios {
@@ -287,6 +290,9 @@
 			height: 100%;
 		}
 	
+		.carousel {
+			display: none
+		}
 	
 	/*Servicios*/
 		#servicios {
@@ -357,8 +363,8 @@
 	display: grid;
 	grid-template-areas:
 	  "header header header"
-	  "nav main novedades"
-	  "nav main novedades"
+	  "nav nav nav"
+	  "main main novedades"
 	  "footer footer footer";
 	grid-template-rows: 1fr 5fr 5fr 1fr; 
 	grid-template-columns: 15% auto 10%;
@@ -408,8 +414,8 @@ main img{
 nav {
 	grid-area: nav;
 	text-align: center;
+	height: 60px;
 
-	font-family: 'Merriweather Sans', sans-serif;
 	background-color: rgb(9, 9, 70);
 	border-top: 1px solid white;
 }
@@ -474,6 +480,18 @@ footer section{
 		height: 100%;
 	}
 
+	.carousel-inner {
+		width: 800px;
+		height: 500px;
+	}
+	
+.carousel-inner h5{
+	background-color: rgb(9, 9, 70);
+	font-size: 50px;
+}
+.carousel-inner p{
+	background-color: gray;
+}
 
 /*Servicios*/
 	#servicios {
