@@ -57,20 +57,32 @@
 	<main>
 	<section>
 		<article>
-			<h1>CONTACTO</h1>
-			<form action="#">
-                <label for="text">Nombre</label>
-				    <input type="text"><br>
-				<label for="email">Email:
-					<input type="email"><br>
-				</label>
-				<label for="Observaciones"> Dejanos tus comentarios:<br>
-					<textarea></textarea>
-				</select>
-				<div>Quieres suscribirte a nuestro newsletter?
-				<input type="checkbox" name="acepta" value="1"></div>
-				<input type="submit" value="Enviar">
-			</form>
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Contactanos!</p>
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Mail">
+    <label>Servicio</label>
+    <select class="browser-default custom-select mb-4">
+		<option value="" disabled>Elegir opcion</option>
+        <option value="1">Integral</option>
+        <option value="2">Contabilidad</option>
+        <option value="3">Auditoria</option>
+        <option value="4">Impuestos</option>
+		<option value="5">Haberes</option>
+    </select>
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Mensaje"></textarea>
+    </div>
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Quieres suscribirte a nuestro newsletter?</label>
+    </div>
+    <!-- Send button -->
+    <button class="btn btn-dark" type="submit">Enviar</button>
+
+</form>
+<!-- Default form contact -->
 		</article>
 	</section>
 	</main>
