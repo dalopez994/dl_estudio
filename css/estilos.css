@@ -376,7 +376,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	background-color: rgb(9, 9, 70);
-	animation: animate__bounce 2s}
+	animation: animate__bounce 2s;
+}
 
 header section {
 	color: white;

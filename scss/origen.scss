@@ -1,0 +1,320 @@
+@import "variables";
+
+@media screen and (max-width: 480px){
+
+
+#gridAreas {
+    	background-color: white;
+		height: 300px;
+		display: grid;
+		grid-template-areas:
+		  "header header header"
+		  "nav nav nav"
+		  "main main main"
+		  "novedades novedades novedades"
+		  "footer footer footer";
+		grid-template-rows: 1fr 5fr 5fr 1fr; 
+		grid-template-columns: 15% auto 10%;
+        header{
+            grid-area: header;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $color_principal;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+                    }
+        }
+        footer{
+            grid-area: footer;
+            display:flex;
+            flex-direction: row;
+            background-color: $color_principal;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+            }    
+        }
+        main{
+            grid-area: main; 
+            display:flex; 
+            section{
+                background-color: $color_fondo_texto;
+                margin:5%;
+                font-size: 20px;
+            }
+            img{
+                width: 60%;
+                margin:1%;
+                display:none;
+            }
+        }
+        nav{
+            grid-area: nav;
+            text-align: center;
+        
+            font-family: 'Merriweather Sans', sans-serif;
+            background-color: $color_principal;
+            border-top: 1px solid white;
+        }
+        aside {
+            grid-area: novedades;
+            text-align: center;
+            align-self: center;
+            background-color: $color_fondo_texto;
+        } 
+    }
+
+
+    #index_main {
+        align-items: center;
+        margin: 5%;	
+    }
+    #index_main img{
+        
+        height: 0;
+        width: 0;
+    }
+    #index_main section {
+        height: 100%;
+    }
+
+    .carousel {
+        display: none
+    }
+
+    #dlEstudio {
+        color: white;
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:1023px) {
+
+    #gridAreas {
+        background-color: white;
+		height: 600px;
+		display: grid;
+		grid-template-areas:
+		  "header header header"
+		  "nav nav nav"
+		  "main main main"
+		  "novedades novedades novedades"
+		  "footer footer footer";
+		grid-template-rows: 1fr 5fr 5fr 1fr; 
+		grid-template-columns: 15% auto 10%;
+        header{
+            grid-area: header;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $color_principal;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+                }
+        }
+        footer{
+            grid-area: footer;
+            display:flex;
+            flex-direction: row;
+            background-color: $color_principal;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+            
+            }   
+        }
+        main{
+            grid-area: main; 
+            display:flex; 
+            section{
+                background-color: $color_fondo_texto;
+                margin:5%;
+                font-size: 20px;
+            }
+            img{
+                width: 60%;
+                margin:1%;
+                display:none;
+            }
+        }
+        nav{
+            grid-area: nav;
+            text-align: center;
+        
+            font-family: 'Merriweather Sans', sans-serif;
+            background-color: $color_principal;
+            border-top: 1px solid white;
+        }
+        aside {
+            grid-area: novedades;
+            text-align: center;
+            align-self: center;
+            background-color: $color_fondo_texto;
+        } 
+    }
+
+    #index_main {
+        align-items: center;
+        margin: 5%;	
+    }
+    #index_main img{
+        height: 60%;
+        width: 60%;
+    }
+    #index_main section {
+        height: 100%;
+    }
+
+
+    #dlEstudio {
+        color: white;
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    #gridAreas {
+        background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/14152824/Buenos-Aires-1.jpg");
+        background-size: cover;
+        height: 1000px;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "main main novedades"
+          "footer footer footer";
+        grid-template-rows: 1fr 5fr 5fr 1fr; 
+        grid-template-columns: 15% auto 10%;
+        header{
+            grid-area: header;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color_principal;
+            animation: animate__bounce 2s;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+            }
+        }
+        footer{
+            grid-area: footer;
+            display:flex;
+            flex-direction: row;
+            background-color: $color_principal;
+            section{
+                color: white;
+                font-size: 20px;
+                font-family: 'Merriweather Sans', sans-serif;
+            
+            }   
+        }
+        main{
+            grid-area: main; 
+            display:flex; 
+            section{
+                background-color: $color_fondo_texto;
+                margin:5%;
+                font-size: 20px;
+            }
+            img{
+                width: 60%;
+                margin:1%;
+            }
+        }
+        nav{
+            grid-area: nav;
+            text-align: center;
+            height: 60px;
+        
+            background-color: $color_principal;
+            border-top: 1px solid white;
+        }
+        aside {
+            grid-area: novedades;
+            text-align: center;
+            align-self: center;
+            background-color: $color_fondo_texto;
+        } 
+    }
+
+
+    ul{
+
+        font-size: 20px;
+        
+
+    }
+    ul li{
+        margin:10px;
+        background-color: $color_fondo_texto;
+        border: 1px solid white;
+        list-style-type: none;
+
+        animation-duration: 2s;
+        animation-name: aparecer;
+    }
+    
+    
+    @keyframes aparecer {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    
+
+    }
+
+    footer section{
+        color: white;
+        font-size: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+
+    }
+    #dlEstudio {
+        color: white;
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+    }
+
+
+    /*Index*/
+
+        #index_main {
+            align-items: center;
+            margin: 5%;	
+        }
+        #index_main img{
+            height: 60%;
+            width: 60%;
+        }
+        #index_main section {
+            height: 100%;
+        }
+
+        .carousel-inner {
+            width: 800px;
+            height: 500px;
+        }
+        
+    .carousel-inner h5{
+        background-color: $color_principal;
+        font-size: 50px;
+    }
+    .carousel-inner p{
+        background-color: gray;
+    }
+}
