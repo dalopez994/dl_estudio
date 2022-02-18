@@ -1,2 +1,21 @@
 $color_principal: rgb(9, 9, 70);
 $color_fondo_texto: rgba(128, 128, 128, 0.747);
+
+
+$redes: (
+ mail: red,
+ whatsapp:  #339913,
+ instagram: rgb(189, 44, 189),
+ facebook: blue
+);
+@each $redes, $color in $redes {
+    .redes-#{$redes} {
+        color: $color;
+    }
+ }
+ 
+ @mixin texto($color,$size){
+	color:$color;
+	font-size:$size;
+
+}

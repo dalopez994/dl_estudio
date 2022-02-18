@@ -1,3 +1,15 @@
+.redes-mail {
+  color: red; }
+
+.redes-whatsapp {
+  color: #339913; }
+
+.redes-instagram {
+  color: #bd2cbd; }
+
+.redes-facebook {
+  color: blue; }
+
 @media screen and (max-width: 480px) {
   #gridAreas {
     background-color: white;

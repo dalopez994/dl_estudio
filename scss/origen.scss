@@ -214,8 +214,7 @@
             flex-direction: row;
             background-color: $color_principal;
             section{
-                color: white;
-                font-size: 20px;
+                @include texto(white,20px);
                 font-family: 'Merriweather Sans', sans-serif;
             
             }   
@@ -279,14 +278,13 @@
     }
 
     footer section{
-        color: white;
-        font-size: 20px;
+        @include texto(white,20px);
         font-family: 'Merriweather Sans', sans-serif;
 
     }
     #dlEstudio {
-        color: white;
-        font-size: 40px;
+        @include texto(white,40px);
+
         font-family: 'Anton', sans-serif;
     }
 
@@ -317,4 +315,5 @@
     .carousel-inner p{
         background-color: gray;
     }
+    
 }
