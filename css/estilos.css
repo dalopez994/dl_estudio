@@ -38,6 +38,7 @@
 		display:flex;
 		flex-direction: row;
 		background-color: rgb(9, 9, 70);
+		margin-top: 10px;
 	}
 	main {
 		grid-area: main; 
@@ -217,6 +218,7 @@
 		display:flex;
 		flex-direction: row;
 		background-color: rgb(9, 9, 70);
+		margin-top: 10px;
 	}
 	main {
 		grid-area: main; 
@@ -251,7 +253,8 @@
 	}
 	
 	body {
-		background-color: white;
+		background-color: #e8ecee;
+
 	}
 	ul{
 	
@@ -298,7 +301,7 @@
 		#servicios {
 			display: grid;
 			grid-template-areas:
-			"s_imp s_contab s_hab s_audi";
+			"s_imp" "s_contab" "s_hab" "s_audi";
 			text-align: center;
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
@@ -366,8 +369,8 @@
 	  "nav nav nav"
 	  "main main novedades"
 	  "footer footer footer";
-	grid-template-rows: 1fr 5fr 5fr 1fr; 
-	grid-template-columns: 15% auto 10%;
+	grid-template-rows: 1fr 1fr 5fr 1fr; 
+	grid-template-columns: 15% auto 15%;
 }
 
 header {
@@ -395,6 +398,7 @@ footer {
 	display:flex;
 	flex-direction: row;
 	background-color: rgb(9, 9, 70);
+	margin-top: 10px;
 }
 main {
 	grid-area: main; 
@@ -471,7 +475,9 @@ footer section{
 
 	#index_main {
 		align-items: center;
-		margin: 5%;	
+
+		display:flex;
+		flex-direction: column;	
 	}
 	#index_main img{
 		height: 60%;

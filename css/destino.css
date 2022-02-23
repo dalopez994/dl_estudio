@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 480px) {
   #gridAreas {
-    background-color: white;
+    background-color: #e8ecee;
     height: 300px;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "novedades novedades novedades" "footer footer footer";
@@ -32,7 +32,8 @@
       grid-area: footer;
       display: flex;
       flex-direction: row;
-      background-color: #090946; }
+      background-color: #090946;
+      margin-top: 1%; }
       #gridAreas footer section {
         color: white;
         font-size: 20px;
@@ -72,11 +73,51 @@
   #dlEstudio {
     color: white;
     font-size: 40px;
-    font-family: 'Anton', sans-serif; } }
+    font-family: 'Anton', sans-serif; }
+  /*Servicios*/
+  #servicios {
+    display: grid;
+    grid-template-areas: "s_imp s_contab s_hab s_audi";
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background: none; }
+  #s_imp {
+    grid-area: s_imp;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_contab {
+    grid-area: s_contab;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_hab {
+    grid-area: s_hab;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_audi {
+    grid-area: s_audi;
+    background-color: rgba(128, 128, 128, 0.747); }
+  /*Staff*/
+  #staff {
+    display: grid;
+    grid-template-areas: "colab1 colab2 colab3 colab4";
+    text-align: center;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    background: none; }
+  #colab1 {
+    grid-area: colab1;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab2 {
+    grid-area: colab2;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab3 {
+    grid-area: colab3;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab4 {
+    grid-area: colab4;
+    background-color: rgba(128, 128, 128, 0.747); } }
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   #gridAreas {
-    background-color: white;
+    background-color: #e8ecee;
     height: 600px;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "novedades novedades novedades" "footer footer footer";
@@ -96,7 +137,8 @@
       grid-area: footer;
       display: flex;
       flex-direction: row;
-      background-color: #090946; }
+      background-color: #090946;
+      margin-top: 1%; }
       #gridAreas footer section {
         color: white;
         font-size: 20px;
@@ -105,12 +147,9 @@
       grid-area: main;
       display: flex; }
       #gridAreas main section {
-        background-color: rgba(128, 128, 128, 0.747);
         margin: 5%;
         font-size: 20px; }
       #gridAreas main img {
-        width: 60%;
-        margin: 1%;
         display: none; }
     #gridAreas nav {
       grid-area: nav;
@@ -126,25 +165,63 @@
   #index_main {
     align-items: center;
     margin: 5%; }
-  #index_main img {
-    height: 60%;
-    width: 60%; }
   #index_main section {
     height: 100%; }
+  .carousel-inner {
+    display: none; }
   #dlEstudio {
     color: white;
     font-size: 40px;
-    font-family: 'Anton', sans-serif; } }
+    font-family: 'Anton', sans-serif; }
+  /*Servicios*/
+  #servicios {
+    display: grid;
+    grid-template-areas: "s_imp s_contab s_hab s_audi";
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background: none; }
+  #s_imp {
+    grid-area: s_imp;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_contab {
+    grid-area: s_contab;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_hab {
+    grid-area: s_hab;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #s_audi {
+    grid-area: s_audi;
+    background-color: rgba(128, 128, 128, 0.747); }
+  /*Staff*/
+  #staff {
+    display: grid;
+    grid-template-areas: "colab1 colab2 colab3 colab4";
+    text-align: center;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    background: none; }
+  #colab1 {
+    grid-area: colab1;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab2 {
+    grid-area: colab2;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab3 {
+    grid-area: colab3;
+    background-color: rgba(128, 128, 128, 0.747); }
+  #colab4 {
+    grid-area: colab4;
+    background-color: rgba(128, 128, 128, 0.747); } }
 
 @media screen and (min-width: 1024px) {
   #gridAreas {
     background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/14152824/Buenos-Aires-1.jpg");
-    background-size: cover;
     height: 1000px;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main novedades" "footer footer footer";
-    grid-template-rows: 1fr 5fr 5fr 1fr;
-    grid-template-columns: 15% auto 10%; }
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 1fr 1fr 5fr 1fr; }
     #gridAreas header {
       grid-area: header;
       display: flex;
@@ -160,7 +237,8 @@
       grid-area: footer;
       display: flex;
       flex-direction: row;
-      background-color: #090946; }
+      background-color: #090946;
+      margin-top: 1%; }
       #gridAreas footer section {
         color: white;
         font-size: 20px;
@@ -211,7 +289,8 @@
   /*Index*/
   #index_main {
     align-items: center;
-    margin: 5%; }
+    display: flex;
+    flex-direction: column; }
   #index_main img {
     height: 60%;
     width: 60%; }
@@ -225,3 +304,56 @@
     font-size: 50px; }
   .carousel-inner p {
     background-color: gray; } }
+
+/*Servicios*/
+#servicios {
+  display: grid;
+  grid-template-areas: "s_imp s_contab s_hab s_audi";
+  text-align: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background: none; }
+
+#s_imp {
+  grid-area: s_imp;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#s_contab {
+  grid-area: s_contab;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#s_hab {
+  grid-area: s_hab;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#s_audi {
+  grid-area: s_audi;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+/*Staff*/
+#staff {
+  display: grid;
+  grid-template-areas: "colab1 colab2 colab3 colab4";
+  text-align: center;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  background: none; }
+
+#colab1 {
+  grid-area: colab1;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#colab2 {
+  grid-area: colab2;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#colab3 {
+  grid-area: colab3;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+#colab4 {
+  grid-area: colab4;
+  background-color: rgba(128, 128, 128, 0.747); }
+
+.animate__animated.animate__bounce {
+  --animate-duration: 3s; }
